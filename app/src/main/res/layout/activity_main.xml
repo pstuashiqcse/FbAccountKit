@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please follow a process bellow to get registered"
+        android:id="@+id/loginStatusTextView"
+        android:layout_below="@+id/toolBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect with facebook"
+        android:id="@+id/connectToFbButton"
+        android:layout_below="@+id/loginStatusTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with phone"
+        android:id="@+id/accKitPhoneButton"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/connectToFbButton"
+        android:layout_alignLeft="@+id/connectToFbButton"
+        android:layout_alignStart="@+id/connectToFbButton"
+        android:layout_alignRight="@+id/connectToFbButton"
+        android:layout_alignEnd="@+id/connectToFbButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up with email"
+        android:id="@+id/accKitEmailButton"
+        android:layout_below="@+id/accKitPhoneButton"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/accKitPhoneButton"
+        android:layout_alignStart="@+id/accKitPhoneButton"
+        android:layout_alignRight="@+id/accKitPhoneButton"
+        android:layout_alignEnd="@+id/accKitPhoneButton" />
+
+
+</RelativeLayout>
