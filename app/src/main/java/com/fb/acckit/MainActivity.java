@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         AccountKitConfiguration.AccountKitConfigurationBuilder configurationBuilder =
                 new AccountKitConfiguration.AccountKitConfigurationBuilder(
                         LoginType.PHONE,
-                        AccountKitActivity.ResponseType.CODE);
+                        AccountKitActivity.ResponseType.TOKEN);
 
         // enable auto sms code pick
         configurationBuilder.setReadPhoneStateEnabled(true);
@@ -209,10 +209,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return null;
     }
-
-
-
-
-
 
 }
