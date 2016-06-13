@@ -93,15 +93,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void checkAccessValidity() {
-        AccessToken accessToken = AccountKit.getCurrentAccessToken();
-        if (accessToken != null) {
-            //Handle Returning User
-        } else {
-            //Handle new or logged out user
-        }
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -124,28 +115,5 @@ public class MainActivity extends AppCompatActivity {
         } else {
             loginStatusTextView.setText("Failed!");
         }
-
-        AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {
-            @Override
-            public void onSuccess(final Account account) {
-                // Get Account Kit ID
-                String accountKitId = account.getId();
-
-                // Get phone number
-                PhoneNumber phoneNumber = account.getPhoneNumber();
-                String phoneNumberString = phoneNumber.toString();
-
-                // Get email
-                String email = account.getEmail();
-
-                Log.e("Current account", "Phone: " + phoneNumber);
-            }
-
-            @Override
-            public void onError(final AccountKitError error) {
-                // Handle Error
-                Log.e("Current account", "Error: " + error.toString());
-            }
-        });
     }
 }

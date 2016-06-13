@@ -6,6 +6,7 @@
 
     <!-- full configuration: https://developers.facebook.com/docs/accountkit-->
 
+    <!-- replace those with yours -->
     <string name="app_id">1496370007330348</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN">64e7f157a58e7ba3c2e3f4cf1beaa6a5</string>
     <string name="app_secret">c8852f5872c21258dedb6428ec09142d</string>
